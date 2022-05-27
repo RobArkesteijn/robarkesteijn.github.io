@@ -1,0 +1,406 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@300&family=Vesper+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Varela+Round&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	text-align: center;
+	font-family: 'Vesper Libre', serif;
+	background-color: #4394B103;
+}
+
+header{
+	width: 100%;
+	height: 100px;
+	background-color: #4394B1;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	border-bottom: solid;
+	color: #E4E2E2;
+}
+
+header .logo{
+	font-size: 50px;
+	line-height: 75px;
+	padding: 10px 0 0 20px;
+	float: left;
+	font-family: 'Oleo Script Swash Caps', cursive;
+	text-shadow: 2px 2px 0.2px #2B6F87;
+}
+
+.logolink{
+	color: #E4E2E2;
+	transition: all .2s ease-in-out 0s;
+}
+
+.logolink:hover{
+	color: whitesmoke;
+}
+
+
+header ul{
+	justify-content: space-around;
+	display: flex;
+	margin: 0 30px 0 5px;
+	
+}
+
+header ul .bannerlink{
+	transition: all .5s ease-in-out 0s;
+}
+
+header ul .bannerlink:hover{
+	text-shadow: 1px 1px 2px #2B6F87;
+	color: whitesmoke;
+}
+
+header ul li .bannerlink{
+	display: block;
+	font-size: 18px;
+	line-height: 100px;
+	padding: 0px 40px;
+	color: #E4E2E2;
+}
+
+header ul li .uolist1{
+	justify-content: space-around;
+	display: flex;
+}
+
+header ul li #aboutme{
+	visibility: hidden;
+	position: absolute;
+	background-color: #4394B1;
+	padding: 5px;
+	border-radius: 0 0 4px 4px;
+	opacity: 0;
+	top: 48px;
+	display: block;
+}
+
+header ul li:hover #aboutme{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	top: 100px;
+}
+
+header ul li #travelling{
+	visibility: hidden;
+	position: absolute;
+	background-color: #4394B1;
+	padding: 5px;
+	margin-left: 3px;
+	border-radius: 0 0 4px 4px;
+	opacity: 0;
+	top: 48px;
+	display: block;
+}
+
+header ul li:hover #travelling{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	top: 100px;
+}
+
+header ul li #updes{
+	visibility: hidden;
+	position: absolute;
+	background-color: #4394B1;
+	margin-left: 64px;
+	padding: 5px;
+	border-radius: 0 0 4px 4px;
+	opacity: 0;
+	top: 48px;
+	display: block;
+}
+
+header ul li:hover #updes{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	top: 100px;
+}
+
+
+
+header ul li ul li{
+	width: 180px;
+	border-radius: 4px;
+}
+
+header ul li ul li .dropdwn{
+	display: block;
+	font-size: 16px;
+	color: #E4E2E2;
+	padding: 12px 18px;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+header ul li ul li .dropdwn:hover{
+	background-color: #2B6F87;
+	text-shadow: 1px 1px 2px #4394B1;
+	color: whitesmoke;
+}
+
+header ul li ul li ul{
+	margin-left: 180px;
+}
+
+header ul li ul #portugal .uolist2{
+	visibility: hidden;
+	position: absolute;
+	background-color: #2B6F87;
+	padding: 5px;
+	border-radius: 0px 4px 4px 0px;
+	opacity: 0;
+	top: 5px;
+	left: -50px;
+	display: block;
+}
+
+header ul li ul #portugal:hover .uolist2{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 0px;
+}
+
+header ul li ul #france .uolist2{
+	visibility: hidden;
+	position: absolute;
+	background-color: #2B6F87;
+	padding: 5px;
+	border-radius: 0 4px 4px 0px;
+	opacity: 0;
+	top: 59px;
+	left: -50px;
+	display: block;
+}
+
+header ul li ul #france:hover .uolist2{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 0px;
+}
+
+header ul li ul #seasia .uolist2{
+	visibility: hidden;
+	position: absolute;
+	background-color: #2B6F87;
+	padding: 5px;
+	border-radius: 0 4px 4px 0px;
+	opacity: 0;
+	top: 113px;
+	left: -50px;
+	display: block;
+}
+
+header ul li ul #seasia:hover .uolist2{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 0px;
+}
+
+header ul li ul #ireland .uolist2{
+	visibility: hidden;
+	position: absolute;
+	background-color: #2B6F87;
+	padding: 5px;
+	border-radius: 0 4px 4px 0px;
+	opacity: 0;
+	top: 167px;
+	left: -50px;
+	display: block;
+}
+
+header ul li ul #ireland:hover .uolist2{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 0px;
+}
+
+header ul li ul #luxembourg .uolist2{
+	visibility: hidden;
+	position: absolute;
+	background-color: #2B6F87;
+	padding: 5px;
+	border-radius: 0 4px 4px 0px;
+	opacity: 0;
+	top: 221px;
+	left: -50px;
+	display: block;
+}
+
+header ul li ul #luxembourg:hover .uolist2{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 0px;
+}
+
+
+header ul li ul li ul li .dropdwn2{
+	display: block;
+	font-size: 16px;
+	color: #E4E2E2;
+	padding: 8px 12px;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+header ul li ul li ul li .dropdwn2:hover{
+	background-color: #4394B1;
+	text-shadow: 1px 1px 2px #2B6F87;
+	color: whitesmoke;
+}
+
+#banner{
+	margin-top: 0%;
+	background-image: url("frontpage.jpg");
+	background-size: cover;
+	background-position:center center;
+	top: 0px;
+	height: 90vh;
+	width: 100%;
+	position:static;
+	border-bottom: solid;
+	color:black;
+}
+
+.location{
+	position: absolute;
+	z-index: 1;
+	margin-top: 110px;
+	left: 4%;
+	font-size: 18px;
+	color: whitesmoke;
+	text-shadow: 1px 1px 1px #2B6F87;
+	
+}
+
+.loclink{
+	color: whitesmoke;
+}
+
+figure{
+	position: absolute;
+	z-index: 1;
+	background-color: white;
+	top: 30%;
+	right: 0;
+	border-radius: 10px 0 0 10px;
+	width: 17%;
+	
+}
+
+figure img{
+	width: 30vh;
+	height: auto;
+	border: solid;
+	color: white;
+	border-radius: 10px 0 0 0;
+	padding: 10px 5px 0 5px;
+}
+
+figure figcaption{
+	font-size: 14px;
+	margin: -10px 15px 0 15px;
+}
+
+.mainimg{
+	position: static;
+	width: auto;
+	margin: 10px 10px;
+}
+
+#portobridge, #portospot{
+	height: 50vh;
+}
+
+#portoview, #portospot2{
+	display: inline;
+	height: 50vh;
+}
+
+#portobeach{
+	height: 38vh;
+}
+
+#portobeach2{
+	height: 38vh;
+	display: inline;
+}
+
+#sata{
+	height: 60vh;
+	image-orientation: 270;
+	outline-left: solid;
+	outline-color: blue;
+	outline-offset: -1px;
+}
+
+.bannertext{
+	position: absolute;
+	margin-top: -27%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.bannertext .thisis{
+	color: white;
+	font-size: 5vw;
+	font-family: 'Dancing Script', cursive;
+	text-shadow: 3px 3px 1px #2B6F87;;
+}
+
+.content{
+	margin: 1.5% 10%; 
+	height: 100%;
+	position: static;
+	color: #E4E2E2;
+	padding: 15px 0px;
+}
+
+.about{
+	font-family: 'Dancing Script', cursive;
+	padding: 7px;
+	font-size: 40px;
+	color:black;
+}
+.text{
+	color: black;
+	font-size: 20px;
+}
+
+footer{
+	padding: 30px 0;
+	background-color: #359ABF95;
+	position:static;
+	color: #E4E2E2;
+	border-top:solid;
+}
+
+.contact{
+	text-decoration: none;
+	color: white;
+	transition: all 0.1s ease-in-out 0s;
+}
+.contact:hover{
+	text-shadow: 1px 1px 1px #2B6F87;
+}
+
+
